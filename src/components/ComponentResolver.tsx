@@ -34,7 +34,14 @@ export function ComponentResolver({ config }: ComponentResolverProps) {
     case "hero":
       return (
         <div style={inlineStyles} className={className}>
-          <Hero {...props} />
+          <Hero
+            {...(props as {
+              title: string;
+              subtitle: string;
+              buttonText?: string;
+              buttonLink?: string;
+            })}
+          />
         </div>
       );
 
