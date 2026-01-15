@@ -151,7 +151,7 @@ Click the theme toggle button (🌙/☀️) in the navigation to switch between 
 
 ## ➕ Adding a New Page
 
-To add a new page, simply edit `src/config/app.config.ts`:
+To add a new page, simply edit `src/config/app.config.ts`. No new files or code changes are required!
 
 ```typescript
 {
@@ -184,29 +184,11 @@ To add a new page, simply edit `src/config/app.config.ts`:
 }
 ```
 
-Then add the route in `src/routes.tsx`:
+The application will automatically:
 
-```typescript
-import { About } from "./pages/About";
-
-// In routes:
-<Route path="/about" element={<About />} />;
-```
-
-Create `src/pages/About.tsx`:
-
-```typescript
-import { usePageConfig } from "../hooks/usePageConfig";
-import { PageRenderer } from "../components/PageRenderer";
-
-export function About() {
-  const pageConfig = usePageConfig();
-  if (!pageConfig) return <div>Page not found</div>;
-  return <PageRenderer pageConfig={pageConfig} />;
-}
-```
-
-**That's it!** No component changes needed.
+1. Create the route `/about`
+2. Add "About" to the navigation menu
+3. Render the page using your configuration
 
 ## 🧩 Component Types
 

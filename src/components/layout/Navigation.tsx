@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router";
 import { useConfig } from "../../hooks/useConfig";
 import { useTheme } from "../../hooks/useTheme";
 

@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 import { useConfig } from "./useConfig";
 import type { PageConfig } from "../config/types";
 

@@ -1,16 +1,15 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router";
 import { Layout } from "./components/layout/Layout";
-import { Home } from "./pages/Home";
-import { Products } from "./pages/Products";
-import { Profile } from "./pages/Profile";
+import { DynamicPage } from "./pages/DynamicPage";
+import { appConfig } from "./config/app.config";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/profile" element={<Profile />} />
+        {appConfig.pages.map((page) => (
+          <Route key={page.id} path={page.path} element={<DynamicPage />} />
+        ))}
       </Route>
     </Routes>
   );
