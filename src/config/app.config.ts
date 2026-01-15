@@ -1,7 +1,7 @@
 import type { AppConfig } from "./types";
 
 export const appConfig: AppConfig = {
-  appName: "ConfigDrive",
+  appName: "Aventus_Machine_Test",
 
   navigation: [
     { label: "Home", path: "/" },
@@ -108,7 +108,7 @@ export const appConfig: AppConfig = {
           props: {
             title: "Welcome to ConfigDrive",
             subtitle:
-              "A fully config-driven React application where UI structure, content, and styles are controlled by configuration.",
+              "A fully config-driven React application where UI structure, content, and styles are controlled by configuration.Created as a aventus machine test",
             buttonText: "Explore Products",
             buttonLink: "/products",
           },
