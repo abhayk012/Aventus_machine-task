@@ -1,6 +1,5 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import RQuery from "./components/RQuery";
 
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./routes";
@@ -12,9 +11,7 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <ConfigProvider>
         <DataProvider>
-          <RQuery>
-            <AppRoutes />
-          </RQuery>
+          <AppRoutes />
         </DataProvider>
       </ConfigProvider>
     </BrowserRouter>
