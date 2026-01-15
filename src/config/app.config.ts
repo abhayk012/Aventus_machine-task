@@ -1,12 +1,13 @@
 import type { AppConfig } from "./types";
 
 export const appConfig: AppConfig = {
-  appName: "ConfigDrive",
+  appName: "Aventus_Machine_Test",
 
   navigation: [
     { label: "Home", path: "/" },
     { label: "Products", path: "/products" },
     { label: "Profile", path: "/profile" },
+    { label: "About", path: "/about" },
   ],
 
   defaultTheme: "light",
@@ -107,12 +108,12 @@ export const appConfig: AppConfig = {
           props: {
             title: "Welcome to ConfigDrive",
             subtitle:
-              "A fully config-driven React application where UI structure, content, and styles are controlled by configuration",
+              "A fully config-driven React application where UI structure, content, and styles are controlled by configuration.Created as a aventus machine test",
             buttonText: "Explore Products",
             buttonLink: "/products",
           },
           style: {
-            padding: "4rem 0",
+            padding: "6rem 0",
             textColor: "text-gray-900",
           },
         },
@@ -129,7 +130,7 @@ export const appConfig: AppConfig = {
                 gap: "2rem",
                 items: [
                   {
-                    title: "Config-Driven",
+                    title: "Config-Driven-Aventus_machine_test",
                     description:
                       "All UI structure and content defined in a single configuration file",
                     icon: "⚙️",
@@ -212,6 +213,28 @@ export const appConfig: AppConfig = {
               },
             },
           ],
+        },
+      ],
+    },
+    {
+      id: "about",
+      title: "About",
+      path: "/about",
+      layout: {
+        maxWidth: "1280px",
+        padding: "2rem",
+      },
+      sections: [
+        {
+          type: "hero",
+          props: {
+            title: "about this",
+            subtitle: "this page is created by editing the app.config.ts",
+          },
+          style: {
+            padding: "4rem 0",
+            textColor: "text-gray-900",
+          },
         },
       ],
     },

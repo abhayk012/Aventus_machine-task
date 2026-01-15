@@ -128,12 +128,12 @@ export const products: Product[] = [
 
 export const userProfile: UserProfile = {
   id: "user-001",
-  name: "Alex Johnson",
-  email: "alex.johnson@example.com",
+  name: "Abhay Krishnan",
+  email: "abhaykrishnan210@gmail.com",
   avatar:
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
   bio: "Tech enthusiast and product reviewer. Love exploring new gadgets and sharing my experiences.",
-  location: "San Francisco, CA",
+  location: "Kannur, Kerala",
   joinDate: "2023-01-15",
   stats: {
     orders: 24,
